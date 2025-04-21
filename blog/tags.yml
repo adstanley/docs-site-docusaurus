@@ -31,7 +31,7 @@ IoT:
   label: IoT
   description: Internet of Things projects and concepts
 
-air quality:
+air-quality:
   label: Air Quality
   description: Projects related to air quality monitoring
 
