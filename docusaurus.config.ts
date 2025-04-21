@@ -96,7 +96,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://linkedin.com/in/yourprofile', // Update with your LinkedIn
+          href: 'https://linkedin.com', // Update with your LinkedIn
           label: 'LinkedIn',
           position: 'right',
         },
@@ -148,7 +148,7 @@ const config: Config = {
             },
             {
               label: 'LinkedIn',
-              href: 'https://linkedin.com/in/yourprofile', // Update with your LinkedIn
+              href: 'https://linkedin.com', // Update with your LinkedIn
             },
             {
               label: 'Email',
@@ -156,11 +156,11 @@ const config: Config = {
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/yourprofile', // Update with your Twitter
+              href: 'https://twitter.com', // Update with your Twitter
             },
             {
               label: 'Instagram',
-              href: 'https://instagram.com/yourprofile', // Update with your Instagram
+              href: 'https://instagram.com', // Update with your Instagram
             },
           ],
         },
