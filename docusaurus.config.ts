@@ -25,7 +25,6 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   presets: [
     [
       'classic',
@@ -86,7 +85,7 @@ const config: Config = {
           position: 'left'
         },
         {
-          to: '/Lego',
+          to: '/lego',
           label: 'Lego',
           position: 'left',
         },

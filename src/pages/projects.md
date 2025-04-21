@@ -3,7 +3,7 @@ title: Projects
 description: A showcase of hardware and software projects by Alex Stanley.
 hide_table_of_contents: false
 ---
-
+# AI GENERATED SLOP
 # Projects
 
 Welcome to my project portfolio. Here you'll find a collection of my work spanning hardware design, embedded systems, and software development. Each project represents my passion for creating practical, well-engineered solutions to real-world problems.
