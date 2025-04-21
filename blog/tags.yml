@@ -17,3 +17,36 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+github:
+  label: Github
+  permalink: /git
+  description: Git tag description
+
+micropython:
+  label: MicroPython
+  description: Posts about MicroPython programming
+
+IoT:
+  label: IoT
+  description: Internet of Things projects and concepts
+
+air-quality:
+  label: Air Quality
+  description: Projects related to air quality monitoring
+
+sensors:
+  label: Sensors
+  description: Working with various electronic sensors
+
+MQ135:
+  label: MQ135
+  description: Projects using the MQ135 gas sensor
+
+DHT22:
+  label: DHT22
+  description: Temperature and humidity sensing with DHT22
+
+XBee:
+  label: XBee
+  description: Wireless communication using XBee modules

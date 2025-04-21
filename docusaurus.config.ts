@@ -5,27 +5,22 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Alex Stanley', // Your name or a project name
-  tagline: 'EE', // Your tagline
-  favicon: 'img/favicon.ico', // Create a custom favicon
+  title: 'Alex Stanley',
+  tagline: 'Software Engineer & Hardware Enthusiast',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://mutexlocked.com',
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // GitHub pages deployment config - update if using GitHub Pages
+  organizationName: 'adstanley', // Your GitHub username
+  projectName: 'portfolio', // Your repo name
 
+  // Change to 'warn' for deployment if you have temporary broken links
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -37,10 +32,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // Update this to your repo or remove if not needed
+          editUrl: 'https://github.com/adstanley/portfolio/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -48,11 +41,9 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+          // Update this to your repo or remove if not needed
+          editUrl: 'https://github.com/adstanley/portfolio/tree/main/',
+          // Blog best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -65,26 +56,48 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-
-    image: 'img/docusaurus-social-card.jpg',
+    // Dark mode by default
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+    },
+    // Custom image for social sharing
+    image: 'img/social-card.jpg',
     navbar: {
-      title: 'TEST',
+      title: 'Alexander Stanley',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'AS Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/projects', 
+          label: 'Projects',
           position: 'left',
-          label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          to: '/garage',
+          label: 'Garage',
+          position: 'left',
+        },
+        {
+          to: '/blog', 
+          label: 'Blog', 
+          position: 'left'
+        },
+        {
+          to: '/Lego',
+          label: 'Lego',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/adstanley',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://linkedin.com/in/yourprofile', // Update with your LinkedIn
+          label: 'LinkedIn',
           position: 'right',
         },
       ],
@@ -93,50 +106,71 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Portfolio',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Resume',
+              to: '/resume',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
             {
               label: 'Blog',
               to: '/blog',
             },
             {
+              label: 'About Me',
+              to: '/about',
+            },
+          ],
+        },
+        {
+          title: 'Built With',
+          items: [
+            {
+              label: 'Docusaurus',
+              href: 'https://docusaurus.io/',
+            },
+            {
+              label: 'React',
+              href: 'https://reactjs.org/',
+            },
+            {
+              label: 'TypeScript',
+              href: 'https://www.typescriptlang.org/',
+            },
+          ],
+        },
+        {
+          title: 'Connect',
+          items: [
+            {
               label: 'GitHub',
               href: 'https://github.com/adstanley',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/in/yourprofile', // Update with your LinkedIn
+            },
+            {
+              label: 'Email',
+              href: 'mailto:adstanley@ufl.edu', // Update with your email
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/yourprofile', // Update with your Twitter
+            },
+            {
+              label: 'Instagram',
+              href: 'https://instagram.com/yourprofile', // Update with your Instagram
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Alex Stanley. Built with ♥ @ your mothers house.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['python', 'bash', 'cpp', 'json'],
     },
   } satisfies Preset.ThemeConfig,
 };
